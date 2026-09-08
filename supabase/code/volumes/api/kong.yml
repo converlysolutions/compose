@@ -384,6 +384,8 @@ services:
             - 172.19.0.1
           deny: []
 
+    
+
   ## Protected Dashboard - catch all remaining routes
   - name: dashboard
     _comment: 'Studio: /* -> http://studio:3000/*'
