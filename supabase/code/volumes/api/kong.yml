@@ -374,15 +374,15 @@ services:
         strip_path: true
         paths:
           - /mcp
-  plugins:
-    - name: cors
-    - name: ip-restriction
-      config:
-        allow:
-          - 127.0.0.1
-          - ::1
-          - 172.19.0.1
-        deny: []
+    plugins:
+      - name: cors
+      - name: ip-restriction
+        config:
+          allow:
+            - 127.0.0.1
+            - ::1
+            - 172.19.0.1
+          deny: []
 
   ## Protected Dashboard - catch all remaining routes
   - name: dashboard
